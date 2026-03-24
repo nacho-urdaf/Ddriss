@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Ddriss - Belleza a Domicilio</title>
+    <!-- Fonts & Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,200..800&amp;display=swap" rel="stylesheet"/>
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Tailwind CDN (Used for development) -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script src="app.js" defer></script>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100 transition-colors duration-300">
+    <!-- Header / Navbar -->
+    <header class="sticky top-0 z-50 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md border-b border-primary/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <div class="flex items-center gap-3">
+                    <div class="bg-primary text-white p-2 rounded-lg">
+                        <span class="material-symbols-outlined text-2xl">content_cut</span>
+                    </div>
+                    <span class="text-2xl font-bold tracking-tight text-slate-900 dark:text-slate-100">Ddriss</span>
+                </div>
+                <nav class="hidden md:flex items-center gap-10">
+                    <a class="text-sm font-medium hover:text-primary transition-colors" href="#">Inicio</a>
+                    <a class="text-sm font-medium hover:text-primary transition-colors" href="#servicios">Servicios</a>
+                    <a class="text-sm font-medium hover:text-primary transition-colors" href="#testimonios">Testimonios</a>
+                    <a class="text-sm font-medium hover:text-primary transition-colors" href="#contacto">Contacto</a>
+                </nav>
+                <div class="flex items-center gap-4">
+                    <button class="bg-primary hover:bg-primary/90 text-white px-6 py-2.5 rounded-lg text-sm font-bold transition-all shadow-lg shadow-primary/20">
+                        Agendar Cita
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <!-- Hero Section -->
+        <section class="relative overflow-hidden py-16 lg:py-24">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid lg:grid-cols-2 gap-12 items-center">
+                    <div class="space-y-8">
+                        <h1 class="text-5xl lg:text-7xl font-bold leading-tight text-slate-900 dark:text-slate-100">
+                            La experiencia del salón, en la <span class="text-primary">comodidad</span> de tu hogar.
+                        </h1>
+                        <p class="text-xl text-slate-600 dark:text-slate-400 max-w-lg">
+                            Servicios de belleza profesionales a domicilio en Pachuca. Calidad premium sin salir de casa.
+                        </p>
+                        <div class="flex flex-wrap gap-4">
+                            <button class="bg-primary hover:bg-primary/90 text-white px-8 py-4 rounded-xl text-lg font-bold transition-all flex items-center gap-2">
+                                <span class="material-symbols-outlined">calendar_today</span>
+                                Agendar Cita
+                            </button>
+                            <button class="border-2 border-primary/20 hover:border-primary text-slate-900 dark:text-slate-100 px-8 py-4 rounded-xl text-lg font-bold transition-all">
+                                Ver Catálogo
+                            </button>
+                        </div>
+                    </div>
+                    <div class="relative">
+                        <div class="aspect-[4/5] rounded-3xl overflow-hidden shadow-2xl rotate-2 hover:rotate-0 transition-transform duration-500">
+                            <img class="w-full h-full object-cover" data-alt="Mujer recibiendo tratamiento de belleza profesional en casa" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAwqkUkpq5VKU2qskX5I7g12jYiSGa3gTsufd54OEJvnaBoiIdG_vCSQNxQZz3EEM2oYzzBsPGqLRYcgJR4liSW9rZY3qFPmhLlsAcsuXu3wb78kDjpAjLfxzRrlK0Fh6vfHHuwZwFgigbmbZcTu5eO6evJNT1Hj38kG0KUuEpSX_DPVmsGtYBmd-IymTdCpZoigWFTDpPieVU2bAouPtn3wojHPGZPrzPFscq4Aw2vk8SL7A-rRGIsoJQxKn-SzKO3BPAI0oOO3eVe"/>
+                        </div>
+                        <div class="absolute -bottom-6 -left-6 bg-white dark:bg-slate-800 p-6 rounded-2xl shadow-xl flex items-center gap-4 border border-primary/10">
+                            <div class="bg-primary/10 p-3 rounded-full text-primary">
+                                <span class="material-symbols-outlined">verified</span>
+                            </div>
+                            <div>
+                                <p class="font-bold text-lg">Certificado</p>
+                                <p class="text-sm opacity-70">Personal Calificado</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Services Grid -->
+        <section class="py-20 bg-primary/5" id="servicios">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl font-bold mb-4">Nuestros Servicios</h2>
+                    <div class="h-1 w-20 bg-primary mx-auto rounded-full"></div>
+                </div>
+                <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <!-- Service 1 -->
+                    <div class="group bg-background-light dark:bg-slate-800/50 p-2 rounded-2xl border border-primary/5 hover:border-primary/30 transition-all shadow-sm">
+                        <div class="aspect-square overflow-hidden rounded-xl mb-4">
+                            <img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Corte de cabello y peinado profesional" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD3vK6kHl6D4SssUIyeBgd1fuUWZuQZ8SBvTkcWKn6ghZyhZx2KTq1GawkG2EQ07TWINMysdRzoEbLWZ2B1Y4QowJE8eJGKX90mHyaOotwjZo8JMIO7047DjJ6H8WBiQHsOD12EKna1h9npsQ6jIvF5YKxtRi2E_SokSsvORtodFRUZg_r6vyAwaCrcVcdpXnGXvtusJkwJyLmALVziAfJmURYx2a9sLnLwi4btdLvs9iTDFDJIiymkm8F3yMh9Eu5KLrfV_KgHvYXF"/>
+                        </div>
+                        <div class="p-4">
+                            <h3 class="text-xl font-bold mb-2">Corte y Peinado</h3>
+                            <p class="text-sm opacity-70 mb-4">Estilo personalizado según tu rostro y preferencias.</p>
+                            <span class="text-primary font-bold">Desde $450</span>
+                        </div>
+                    </div>
+                    <!-- Service 2 -->
+                    <div class="group bg-background-light dark:bg-slate-800/50 p-2 rounded-2xl border border-primary/5 hover:border-primary/30 transition-all shadow-sm">
+                        <div class="aspect-square overflow-hidden rounded-xl mb-4">
+                            <img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Maquillaje profesional para eventos" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB-Cynz4Ol4fTfXOMuWfzVanzliU4iyIHZ4SJCgXUnZViljIh5EIyuSyLOE3WVc7Z21cYIGI1-zaLkDHZhZdT7U6iXZqxSxfCnjCS_NDq_FlfAUgIs6VZQF23TgKF-jIg0OIC4DJEpZC018zr1K8rmSSlB4qv4lA8SADCmjusyXVHwMzE_GJ_cOgOYsB3fQyK_PI9wN93m5KiXz6xKm1iCMtlq5y4ImtQURICvHaiTnKOZu3qY62YSE_sBS4HIXVErqooS1osKAppjI"/>
+                        </div>
+                        <div class="p-4">
+                            <h3 class="text-xl font-bold mb-2">Maquillaje Profesional</h3>
+                            <p class="text-sm opacity-70 mb-4">Looks impecables para bodas, fiestas y eventos especiales.</p>
+                            <span class="text-primary font-bold">Desde $800</span>
+                        </div>
+                    </div>
+                    <!-- Service 3 -->
+                    <div class="group bg-background-light dark:bg-slate-800/50 p-2 rounded-2xl border border-primary/5 hover:border-primary/30 transition-all shadow-sm">
+                        <div class="aspect-square overflow-hidden rounded-xl mb-4">
+                            <img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Servicio de manicura y pedicura estética" src="https://lh3.googleusercontent.com/aida-public/AB6AXuARQFUB9OzdNj1lWJqW-mnIwTe2yTyCD7-Yg_BWbVXtNbTK9c61es1Z12HD-4pTJOssHibZsM_A5kz1PobuEBxV9pmQrmYsGScfNze606NxuLYOZHWJGr7qysvTTQ8bizgaFXXN3fBZkqK5bfyrGLXw5Y1Q4BGlE40Mgfh3VHI1hntcYbSTzVnVZrTS6vUMnNBddsRoY_w87FJ5icnXZn_ITqxBJHha4rYhxJgfIZ39b6fddu9kEMiaZy-nJdcy2ezsp2JznExy9lE8"/>
+                        </div>
+                        <div class="p-4">
+                            <h3 class="text-xl font-bold mb-2">Manicura y Pedicura</h3>
+                            <p class="text-sm opacity-70 mb-4">Cuidado integral de tus manos y pies con productos premium.</p>
+                            <span class="text-primary font-bold">Desde $350</span>
+                        </div>
+                    </div>
+                    <!-- Service 4 -->
+                    <div class="group bg-background-light dark:bg-slate-800/50 p-2 rounded-2xl border border-primary/5 hover:border-primary/30 transition-all shadow-sm">
+                        <div class="aspect-square overflow-hidden rounded-xl mb-4">
+                            <img class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" data-alt="Tratamiento facial relajante e hidratante" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBgsSWFyZyq_TeX-gi0EDnH90fWPe9fOhMrWnnQHzUiseQrznRdpdFwPxe8zRMgXcp_fsOvIK9-ckwqQ2t-C6dy54JeJE8TnNTdEpldVHTysmdwFF80wvC3R2CPdQJq_PsyVATsKJS2Lk5O4iKFE_rKnCzptjOop0jIExSM6-oJBT0KtTXN9qxwPJILZ65CwwrL3_RJOT7eyS8XhgxOSmXQMy9XRjg_XlyHSrX2uiUd3iyHzb_TeH2T80jLbzGlt_LofCpyCDFzWXKU"/>
+                        </div>
+                        <div class="p-4">
+                            <h3 class="text-xl font-bold mb-2">Tratamientos Faciales</h3>
+                            <p class="text-sm opacity-70 mb-4">Limpieza profunda e hidratación para una piel radiante.</p>
+                            <span class="text-primary font-bold">Desde $600</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- How it Works -->
+        <section class="py-20">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h2 class="text-4xl font-bold mb-16">¿Cómo funciona?</h2>
+                <div class="grid md:grid-cols-3 gap-12 relative">
+                    <!-- Step 1 -->
+                    <div class="flex flex-col items-center gap-6">
+                        <div class="w-20 h-20 rounded-full bg-primary flex items-center justify-center text-white shadow-xl">
+                            <span class="material-symbols-outlined text-4xl">touch_app</span>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-bold mb-2">Eliges servicio</h3>
+                            <p class="text-slate-600 dark:text-slate-400">Selecciona el tratamiento que mejor se adapte a tus necesidades.</p>
+                        </div>
+                    </div>
+                    <!-- Step 2 -->
+                    <div class="flex flex-col items-center gap-6">
+                        <div class="w-20 h-20 rounded-full bg-primary flex items-center justify-center text-white shadow-xl">
+                            <span class="material-symbols-outlined text-4xl">event_available</span>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-bold mb-2">Agendas</h3>
+                            <p class="text-slate-600 dark:text-slate-400">Elige la fecha y hora que más te convenga de forma online.</p>
+                        </div>
+                    </div>
+                    <!-- Step 3 -->
+                    <div class="flex flex-col items-center gap-6">
+                        <div class="w-20 h-20 rounded-full bg-primary flex items-center justify-center text-white shadow-xl">
+                            <span class="material-symbols-outlined text-4xl">home_pin</span>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-bold mb-2">Vamos a tu casa</h3>
+                            <p class="text-slate-600 dark:text-slate-400">Nuestros profesionales llegan a tu domicilio con todo lo necesario.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Testimonials -->
+        <section class="py-20 bg-slate-900 text-white overflow-hidden" id="testimonios">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-4xl font-bold mb-16 text-center">Lo que dicen nuestras clientas</h2>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="bg-slate-800 p-8 rounded-2xl border border-white/5">
+                        <div class="flex gap-1 text-yellow-400 mb-4">
+                            <span class="material-symbols-outlined">star</span>
+                            <span class="material-symbols-outlined">star</span>
+                            <span class="material-symbols-outlined">star</span>
+                            <span class="material-symbols-outlined">star</span>
+                            <span class="material-symbols-outlined">star</span>
+                        </div>
+                        <p class="text-lg italic mb-6">"Excelente servicio, muy puntuales y el maquillaje quedó espectacular. ¡Súper recomendados!"</p>
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 rounded-full bg-primary flex items-center justify-center font-bold">MC</div>
+                            <div>
+                                <p class="font-bold">Mariana Chávez</p>
+                                <p class="text-xs opacity-50">Cliente frecuente</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-slate-800 p-8 rounded-2xl border border-white/5">
+                        <div class="flex gap-1 text-yellow-400 mb-4">
+                            <span class="material-symbols-outlined">star</span>
+                            <span class="material-symbols-outlined">star</span>
+                            <span class="material-symbols-outlined">star</span>
+                            <span class="material-symbols-outlined">star</span>
+                            <span class="material-symbols-outlined">star</span>
+                        </div>
+                        <p class="text-lg italic mb-6">"Me encantó la comodidad de arreglarme para mi graduación sin salir de mi casa. Gran calidad."</p>
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 rounded-full bg-primary flex items-center justify-center font-bold">LR</div>
+                            <div>
+                                <p class="font-bold">Lucía Rodríguez</p>
+                                <p class="text-xs opacity-50">Cliente satisfecha</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-slate-800 p-8 rounded-2xl border border-white/5">
+                        <div class="flex gap-1 text-yellow-400 mb-4">
+                            <span class="material-symbols-outlined">star</span>
+                            <span class="material-symbols-outlined">star</span>
+                            <span class="material-symbols-outlined">star</span>
+                            <span class="material-symbols-outlined">star</span>
+                            <span class="material-symbols-outlined">star</span>
+                        </div>
+                        <p class="text-lg italic mb-6">"El manicure más duradero que he tenido. La atención al detalle de Ddriss es de otro nivel."</p>
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 rounded-full bg-primary flex items-center justify-center font-bold">AG</div>
+                            <div>
+                                <p class="font-bold">Ana García</p>
+                                <p class="text-xs opacity-50">Pachuca, Hgo.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Contact Section -->
+        <section class="py-20" id="contacto">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="bg-white dark:bg-slate-800 rounded-3xl overflow-hidden shadow-2xl flex flex-col lg:flex-row border border-primary/10">
+                    <div class="lg:w-1/2 p-12 bg-primary text-white flex flex-col justify-between">
+                        <div>
+                            <h2 class="text-4xl font-bold mb-6">¿Lista para brillar?</h2>
+                            <p class="text-white/80 text-lg mb-8">Ponte en contacto con nosotros para cualquier duda o consulta especial.</p>
+                            <div class="space-y-6">
+                                <div class="flex items-center gap-4">
+                                    <span class="material-symbols-outlined">call</span>
+                                    <span>+52 771 123 4567</span>
+                                </div>
+                                <div class="flex items-center gap-4">
+                                    <span class="material-symbols-outlined">mail</span>
+                                    <span>hola@ddriss.com</span>
+                                </div>
+                                <div class="flex items-center gap-4">
+                                    <span class="material-symbols-outlined">location_on</span>
+                                    <span data-location="Pachuca, Hidalgo">Pachuca, Hidalgo</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex gap-4 mt-12">
+                            <div class="w-10 h-10 rounded-full bg-white/20 flex items-center justify-center hover:bg-white/40 cursor-pointer">
+                                <span class="material-symbols-outlined">share</span>
+                            </div>
+                            <div class="w-10 h-10 rounded-full bg-white/20 flex items-center justify-center hover:bg-white/40 cursor-pointer">
+                                <span class="material-symbols-outlined">public</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lg:w-1/2 p-12">
+                        <form class="space-y-6">
+                            <div class="grid sm:grid-cols-2 gap-6">
+                                <div class="space-y-2">
+                                    <label class="text-sm font-bold opacity-70">Nombre</label>
+                                    <input class="w-full bg-primary/5 border-none rounded-lg focus:ring-2 focus:ring-primary p-3" placeholder="Tu nombre" type="text"/>
+                                </div>
+                                <div class="space-y-2">
+                                    <label class="text-sm font-bold opacity-70">Email</label>
+                                    <input class="w-full bg-primary/5 border-none rounded-lg focus:ring-2 focus:ring-primary p-3" placeholder="tu@email.com" type="email"/>
+                                </div>
+                            </div>
+                            <div class="space-y-2">
+                                <label class="text-sm font-bold opacity-70">Servicio de interés</label>
+                                <select class="w-full bg-primary/5 border-none rounded-lg focus:ring-2 focus:ring-primary p-3">
+                                    <option>Corte y Peinado</option>
+                                    <option>Maquillaje</option>
+                                    <option>Manicura</option>
+                                    <option>Facial</option>
+                                </select>
+                            </div>
+                            <div class="space-y-2">
+                                <label class="text-sm font-bold opacity-70">Mensaje</label>
+                                <textarea class="w-full bg-primary/5 border-none rounded-lg focus:ring-2 focus:ring-primary p-3" placeholder="¿En qué podemos ayudarte?" rows="4"></textarea>
+                            </div>
+                            <button class="w-full bg-primary text-white font-bold py-4 rounded-xl shadow-lg shadow-primary/30 hover:bg-primary/90 transition-all">
+                                Enviar Mensaje
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-white/60 py-16 border-t border-white/5">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-12 mb-12">
+                <div class="col-span-2">
+                    <div class="flex items-center gap-3 mb-6 text-white">
+                        <div class="bg-primary p-2 rounded-lg">
+                            <span class="material-symbols-outlined">content_cut</span>
+                        </div>
+                        <span class="text-2xl font-bold tracking-tight">Ddriss</span>
+                    </div>
+                    <p class="max-w-md">Llevamos el salón de belleza a tu puerta con profesionales altamente capacitados y productos de la mejor calidad. Tu belleza, en tu tiempo.</p>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-6 uppercase tracking-wider text-sm">Enlaces</h4>
+                    <ul class="space-y-4 text-sm">
+                        <li><a class="hover:text-primary transition-colors" href="#">Inicio</a></li>
+                        <li><a class="hover:text-primary transition-colors" href="#servicios">Servicios</a></li>
+                        <li><a class="hover:text-primary transition-colors" href="#testimonios">Testimonios</a></li>
+                        <li><a class="hover:text-primary transition-colors" href="#contacto">Contacto</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-6 uppercase tracking-wider text-sm">Horario</h4>
+                    <ul class="space-y-4 text-sm">
+                        <li>Lun - Vie: 9am - 8pm</li>
+                        <li>Sábados: 9am - 6pm</li>
+                        <li>Domingos: Previa cita</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="pt-12 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-6">
+                <p class="text-sm">© 2024 Ddriss Beauty Home Services. Todos los derechos reservados.</p>
+                <div class="flex gap-6">
+                    <span class="material-symbols-outlined cursor-pointer hover:text-white">social_leaderboard</span>
+                    <span class="material-symbols-outlined cursor-pointer hover:text-white">camera</span>
+                    <span class="material-symbols-outlined cursor-pointer hover:text-white">alternate_email</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Floating WhatsApp Button -->
+    <a class="fixed bottom-8 right-8 bg-[#25D366] text-white p-4 rounded-full shadow-2xl hover:scale-110 transition-transform z-50 flex items-center justify-center" href="https://wa.me/527711234567" target="_blank">
+        <svg class="w-8 h-8" fill="currentColor" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"></path>
+        </svg>
+    </a>
+</body>
+</html>

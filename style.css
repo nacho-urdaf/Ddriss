@@ -1,0 +1,17 @@
+/* Ddriss Custom Styles */
+
+/* 
+   Since we are using Tailwind CSS via CDN, most styling is done via classes.
+   Add any custom CSS rules here.
+*/
+
+:root {
+    --primary-color: #eb4755;
+    --bg-light: #f8f6f6;
+    --bg-dark: #211112;
+}
+
+/* Smooth scrolling for anchor links */
+html {
+    scroll-behavior: smooth;
+}
